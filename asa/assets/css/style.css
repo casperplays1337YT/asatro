@@ -1,0 +1,167 @@
+/* === Asatro Hub CSS === */
+
+/* Grundinställningar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b0f1a;
+    color: #f0f0e3;
+}
+
+/* Header */
+header {
+    background: #1a1f2e;
+    color: #facc15;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Navigation (vänster drop-down) */
+nav {
+    background: #141a28;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 15px;
+    display: block;
+    border-radius: 10px;
+    background: #1f2937;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a:focus {
+    background: #facc15;
+    color: #0b0f1a;
+}
+
+/* Drop-down */
+.dropdown-content {
+    display: none;
+    flex-direction: column;
+    background: #1f2937;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.dropdown-content a {
+    padding: 10px 15px;
+}
+
+/* Container för innehåll */
+.container {
+    margin-left: 240px;
+    padding: 25px;
+    max-width: 900px;
+}
+
+/* Kort-layout */
+.card {
+    background: #1f273a;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Rubriker */
+h2 {
+    color: #facc15;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #f5d35d;
+    margin-bottom: 10px;
+}
+
+/* Knappar */
+button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background: #facc15;
+    color: #0b0f1a;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+button:hover {
+    background: #fcd34d;
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    border-radius: 15px;
+    background: #1f273a;
+    color: #f0f0e3;
+    border: none;
+    resize: none;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #1a1f2e;
+    color: #facc15;
+    font-size: 14px;
+    margin-left: 240px;
+}
+
+/* Responsiv design för mobil */
+@media(max-width:768px) {
+    nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .container {
+        margin-left: 0;
+    }
+
+    footer {
+        margin-left: 0;
+    }
+}
